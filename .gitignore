@@ -1,0 +1,26 @@
+# Dependências do Composer
+/vendor/
+
+# Arquivo de lock (opcional para libs)
+composer.lock
+
+# Arquivos de cache / temporários
+*.log
+*.tmp
+*.cache
+
+# IDEs
+.idea/
+.vscode/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Testes locais
+/examples/*.local.php
+/tests/*.local.php
+
+# Arquivos sensíveis
+.env
+.env.local
