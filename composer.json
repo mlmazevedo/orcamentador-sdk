@@ -1,0 +1,21 @@
+{
+  "name": "orcamentador/sdk",
+  "description": "SDK oficial da API Orçamentador (SINAPI)",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Marcio Medeiros",
+      "email": "contato@orcamentador.com.br"
+    }
+  ],
+  "require": {
+    "php": ">=7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Orcamentador\\SDK\\": "src/"
+    }
+  },
+  "minimum-stability": "stable"
+}
