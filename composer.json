@@ -5,7 +5,7 @@
   "license": "MIT",
   "authors": [
     {
-      "name": "Marcio Medeiros",
+      "name": "Orçamentador",
       "email": "contato@orcamentador.com.br"
     }
   ],
@@ -19,3 +19,4 @@
   },
   "minimum-stability": "stable"
 }
+
