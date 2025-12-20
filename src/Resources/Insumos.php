@@ -31,5 +31,23 @@ class Insumos
     {
         return $this->http->get('/insumos', $params);
     }
+
+    public function historico(array $params)
+    {
+        $params['item'] = 'insumo';
+        return $this->http->get('/historico', $params);
+    }  
+
+    public function comparar(array $params)
+    {
+        $params['item'] = 'insumo';
+        return $this->http->get('/comparar', $params);
+    }    
+    
+    public function previsao(array $params)
+    {
+        $params['item'] = 'insumo';
+        return $this->http->get('/previsao', $params);
+    }            
 }
 ?>
