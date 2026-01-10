@@ -8,6 +8,7 @@ use Orcamentador\SDK\Resources\Composicoes;
 use Orcamentador\SDK\Resources\Orcamento;
 use Orcamentador\SDK\Resources\Estados;
 use Orcamentador\SDK\Resources\Indicadores;
+use Orcamentador\SDK\Resources\Encargos;
 
 class Client
 {
@@ -75,6 +76,16 @@ class Client
     public function indicadores()
     {
         return new Indicadores($this->http);
+    }  
+    
+    /**
+     * Retorna o resource de encargos
+     *
+     * @return Encargos
+     */
+    public function encargos()
+    {
+        return new Encargos($this->http);
     }    
 }
 ?>
