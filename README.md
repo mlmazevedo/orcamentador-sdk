@@ -95,7 +95,6 @@ $client->insumos()->previsao([
 ]);
 ```
 Outros parâmetros de "previsao": output
-
 ---
 
 ### 🏗️ Composições
@@ -130,6 +129,14 @@ $client->composicoes()->explode([
 Outros parâmetros de "explode": regime, output, data_ref, sort, order
 
 ```php
+$client->encargos()->buscar([
+    'estado' => 'sp',
+    'data_ref' => '2025-12-01' // ou deixe vazio para a tabela SINAPI mais recente
+]);
+```
+Outros parâmetros de "encargos": output
+
+```php
 $client->composicoes()->historico([
     'codigo'   => 123456,
     'estado' => 'sp'
@@ -160,12 +167,11 @@ Outros parâmetros de "previsao": output
 
 ```php
 $client->indicadores()->listar([
-    'indicadores' => 'incc,incc_acumulado,ipca,selic,dolar'
+    'indicadores' => 'incc,incc_acumulado,ipca,igpm,selic,dolar'
 ]);
 ```
 
 Outros parâmetros de "listar": output
-
 ---
 
 ### 🌎 Estados
@@ -176,7 +182,6 @@ $client->estados()->listar([
 ]);
 ```
 Outros parâmetros de "listar": output
-
 ---
 
 ### 💰 Recursos de orçamento
@@ -189,8 +194,8 @@ $client->orcamento()->gerar([
 ]);
 ```
 Outros parâmetros de "gerar": bdi, output, data_ref
-
 ---
+
 
 ## ⚠️ Tratamento de erros
 
