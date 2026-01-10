@@ -36,9 +36,3 @@ class ApiException extends \Exception
         return $this->payload;
     }
 }
-
-class RateLimitException extends ApiException {}
-class AuthenticationException extends ApiException {}
-class NotFoundException extends ApiException {}
-class ServerException extends ApiException {}
-?>
